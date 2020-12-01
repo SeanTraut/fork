@@ -6,6 +6,10 @@ function App() {
     <div className="App">
       <NavBar />
       <MainCTA />
+      <Content
+        title="Lorems Getsum" 
+        body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
+      />
     </div>
   );
 }
@@ -31,6 +35,20 @@ function MainCTA(props:MainCTAProps){
       <div className="hero-image" />
       <h1 className="page-title">The Facts of Real Knowledge</h1>
       <div className="page-logo" />
+    </div>
+  );
+}
+
+interface ContentProps{
+  body: string,
+  title?: string,
+  class?: string
+}
+function Content(props:ContentProps){
+  return(
+    <div className={`Content ${props.class}`}>
+      <h3 className={`content-title ${props.class}`}>{props.title}</h3>
+      {props.body}
     </div>
   );
 }
