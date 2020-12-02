@@ -1,1 +1,39 @@
+@import "./reset.css";
 
+/* === CSS Variables ===*/
+:root{
+  --text:black;
+}
+
+/* === Global Styling === */
+body, body * {
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+script{
+  display: none;
+}
+
+spacer{
+  flex: 1;
+}
+
+a{
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* === Nav Bar === */
+div.NavBar{
+
+}
+/* === Main CTA === */
+/* === Content 1 === */
+/* === Content 2 === */
+/* === Footer? === */

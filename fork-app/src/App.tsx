@@ -10,6 +10,11 @@ function App() {
         title="Lorems Getsum" 
         body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
       />
+      <Content
+        title="Lorems Gotsum" 
+        body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
+      />
+      <Footer />
     </div>
   );
 }
@@ -53,4 +58,12 @@ function Content(props:ContentProps){
   );
 }
 
+interface FooterProps{}
+function Footer(props:FooterProps){
+  return(
+    <div className="Footer">
+
+    </div>
+  );
+}
 export default App;
