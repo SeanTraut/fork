@@ -7,11 +7,13 @@ function App() {
       <NavBar />
       <MainCTA />
       <Content
-        title="Lorems Getsum" 
+        title="Lorems Getsum"
+        class="left"
         body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
       />
       <Content
-        title="Lorems Gotsum" 
+        title="Lorana Gotsum"
+        class="right"
         body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
       />
       <Footer />
@@ -37,9 +39,10 @@ interface MainCTAProps{}
 function MainCTA(props:MainCTAProps){
   return(
     <div className="MainCTA">
-      <div className="hero-image" />
-      <h1 className="page-title">The Facts of Real Knowledge</h1>
-      <div className="page-logo" />
+      <div className="hero-image">
+        <h1 className="page-title">The Facts of Real Knowledge</h1>
+        <div className="page-logo" />
+      </div>
     </div>
   );
 }

@@ -30,10 +30,62 @@ a{
 }
 
 /* === Nav Bar === */
-div.NavBar{
-
+div.NavBar ul.nav-list{
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+ul.nav-list li.nav-li{
+  flex: 1;
+  height: 50px;
+  border: 4px solid black;
+  justify-content: stretch;
+}
+li.nav-li a.nav-text{
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
 /* === Main CTA === */
-/* === Content 1 === */
-/* === Content 2 === */
+div.MainCTA{
+  flex: 0 0 600px;
+  border: 4px solid black;
+  border-top: none;
+}
+
+div.MainCTA div.hero-image{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+div.MainCTA h1.page-title{
+  font-size: 48px;
+}
+
+div.MainCTA div.page-logo{
+  flex: 0 0 200px;
+  width: 200px;
+  margin-top: 100px;
+  background: red;
+}
+/* === Content All === */
+div.Content{
+  flex: 0 0 250px;
+  border: 4px solid black;
+}
+div.Content h3.content-title{
+  font-size: 32px;
+  padding: 20px 0 20px 10px;
+}
+
+/* === Content Right === */
+div.Content.right{
+  align-items: flex-end;
+}
+div.Content.right h3.content-title{
+  padding: 20px 10px 20px 0;
+}
 /* === Footer? === */
