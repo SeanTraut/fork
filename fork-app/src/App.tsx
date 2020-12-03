@@ -40,7 +40,7 @@ function MainCTA(props:MainCTAProps){
   return(
     <div className="MainCTA">
       <div className="hero-image">
-        <h1 className="page-title">The Facts <br/>of<br/> Real Knowledge</h1>
+        <h1 className="page-title title">The Facts <br/>of<br/> Real Knowledge</h1>
         <div className="page-logo" />
       </div>
     </div>
@@ -56,7 +56,7 @@ function Content(props:ContentProps){
   return(
     <div className={`Content ${props.class}`}>
       <div className="content-body">
-        <h3 className={`content-title ${props.class}`}>{props.title}</h3>
+        <h3 className={`content-title title ${props.class}`}>{props.title}</h3>
         {props.body}
       </div>
     </div>
