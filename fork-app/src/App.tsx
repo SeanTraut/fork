@@ -55,8 +55,10 @@ interface ContentProps{
 function Content(props:ContentProps){
   return(
     <div className={`Content ${props.class}`}>
-      <h3 className={`content-title ${props.class}`}>{props.title}</h3>
-      {props.body}
+      <div className="content-body">
+        <h3 className={`content-title ${props.class}`}>{props.title}</h3>
+        {props.body}
+      </div>
     </div>
   );
 }
