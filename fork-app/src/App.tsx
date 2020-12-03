@@ -40,7 +40,7 @@ function MainCTA(props:MainCTAProps){
   return(
     <div className="MainCTA">
       <div className="hero-image">
-        <h1 className="page-title">The Facts of Real Knowledge</h1>
+        <h1 className="page-title">The Facts <br/>of<br/> Real Knowledge</h1>
         <div className="page-logo" />
       </div>
     </div>
