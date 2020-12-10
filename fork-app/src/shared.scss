@@ -1,0 +1,68 @@
+/* === Nav Bar === */
+div.NavBar ul.nav-list{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+ul.nav-list li.nav-li{
+  flex: 1;
+  height: 30px;
+  background: var(--accent1);
+  justify-content: stretch;
+}
+ul.nav-list li.nav-li:hover{
+  background: var(--accent2);
+}
+
+li.nav-li a.nav-text{
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-family: 'Open Sans';
+  color: var(--accenttext);
+}
+
+.title{
+  font-family: var(--title);
+  font-weight: 800;
+}
+
+/* === Content All === */
+div.Content{
+  flex: 0 0 150px;
+  border-bottom: 1px solid var(--accent1);
+  padding: 20px 0 0 20px;
+}
+
+div.Content:nth-child(odd){
+  background-color: var(--color1op);
+}
+
+div.Content:nth-child(even){
+  background: var(--color2op);
+}
+
+div.page-items>:first-child{
+  border-top: none;
+}
+
+div.page-items>:last-child{
+  border-bottom: none;
+}
+
+div.Content h3.content-title.title{
+  font-size: 32px;
+  font-family: var(--title);
+}
+
+div.Content div.content-body{
+  width: 80ch;
+}
+
+/* === Content Right === */
+div.Content.right{
+  align-items: flex-end;
+  padding: 20px 20px 0 0;
+}
+/* === Footer? === */
