@@ -13,10 +13,29 @@ export function rerender(){
 interface AppState{
   page: string
 }
-
 class App extends React.Component<{}> {
   state: AppState = {
     page:"home"
+  };
+  
+  hash_changed = () => {
+    let url = window.location.hash.slice(1);
+    console.log(url);
+
+    let [page] = url.split("/");
+
+    if(!page) return;
+    
+    let new_state = {...this.state, page: page};
+
+    this.setState(new_state);
+  };
+
+  componentDidMount(){
+    window.addEventListener("hashchange", this.hash_changed);
+    this.hash_changed();
+
+    app = this;
   };
 
   render(){
