@@ -8,12 +8,12 @@ export function HomePage() {
       <MainCTA />
       <div className="page-items">
         <Content
-          title="Lorems Getsum"
+          title='What really is "Fake News"?'
           class="left"
           body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
         />
         <Content
-          title="Lorana Gotsum"
+          title="But why should I care?"
           class="right"
           body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
         />
