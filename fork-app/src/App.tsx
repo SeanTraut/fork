@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.scss';
 import {HomePage} from './HomePage/HomePage';
+import {WhyPage} from './WhyPage/WhyPage';
+import {HowPage} from './HowPage/HowPage';
+import {ResourcePage} from './ResourcePage/ResourcePage';
 
 export let app:App | undefined = undefined;
 
@@ -42,6 +45,12 @@ class App extends React.Component<{}> {
     let page;
     if(this.state.page === "home"){
       page = <HomePage />;
+    }else if(this.state.page === "why"){
+      page = <WhyPage />
+    }else if(this.state.page === "how"){
+      page = <HowPage />
+    }else if(this.state.page === "resources"){
+      page = <ResourcePage />
     }else{
       page = <div>404: Page Not Found</div>
     }

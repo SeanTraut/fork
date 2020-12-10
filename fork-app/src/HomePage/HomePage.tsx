@@ -1,7 +1,8 @@
 import React from 'react';
 import {NavBar, Content, Footer} from '../shared';
 
-export function HomePage() {
+interface HomePageProps{}
+export function HomePage(props:HomePageProps) {
   return (
     <div className="HomePage">
       <NavBar />
