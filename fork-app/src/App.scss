@@ -120,7 +120,9 @@ div.MainCTA div.page-logo{
   z-index: 3;
   width: 200px;
   margin-top: 50px;
-  background: var(--accent1);
+  background: url('./assets/cta/logotes.png');
+  background-size: contain;
+  background-position: center;
 }
 /* === Content All === */
 div.Content{
