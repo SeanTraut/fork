@@ -6,17 +6,19 @@ function App() {
     <div className="App">
       <NavBar />
       <MainCTA />
-      <Content
-        title="Lorems Getsum"
-        class="left"
-        body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
-      />
-      <Content
-        title="Lorana Gotsum"
-        class="right"
-        body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
-      />
-      <Footer />
+      <div className="page-items">
+        <Content
+          title="Lorems Getsum"
+          class="left"
+          body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
+        />
+        <Content
+          title="Lorana Gotsum"
+          class="right"
+          body="Non do Lorem esse elit anim ex labore ad laboris officia pariatur proident consequat. Dolore cillum consectetur labore sunt ullamco consectetur aliquip consectetur commodo do pariatur. Esse cillum cupidatat sit mollit reprehenderit nulla ipsum et. Labore Lorem officia dolore excepteur."
+        />
+        <Footer />
+      </div>
     </div>
   );
 }
