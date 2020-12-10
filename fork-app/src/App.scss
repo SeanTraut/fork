@@ -3,17 +3,18 @@
 /* === Font Imports === */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 /* === CSS Variables ===*/
 :root{
   --text:black;
+  --accenttext: #fff;
+  --accent: #333;
+  --accenthover: #666;
   --offblack: rgba(0,0,0,.8);
   --offwhite: #f5f5f5;
   --butter: #fedd00;
   --powder: #aae1d7;
-  --accent: #e5e5e5;
-  --title: 'Iato';
+  --title: 'Montserrat';
   --body: 'Open Sans';
 }
 
@@ -50,13 +51,10 @@ ul.nav-list li.nav-li{
   flex: 1;
   height: 30px;
   background: var(--accent);
-  border-bottom: 1px solid var(--offblack);
-  border-right: 1px  solid var(--offblack);
   justify-content: stretch;
 }
-
-ul.nav-list li.nav-li:last-of-type{
-  border-right: none;
+ul.nav-list li.nav-li:hover{
+  background: var(--accenthover);
 }
 
 li.nav-li a.nav-text{
@@ -66,6 +64,7 @@ li.nav-li a.nav-text{
   align-items: center;
   white-space: nowrap;
   font-family: var(--title);
+  color: var(--accenttext);
 }
 
 .title{
